@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenta tu cita </title>
+</head>
+
+<body>
+    
+        <h1 style="color: rgb(29, 197, 166);">Consultorio El Diente Feliz</h1> 
+    <h2>Agenda tu cita</h2> 
+        <form action="procesar_formuario" method="post">Bienvenido al sistema de agenda virtual. Requerimos que llene todos los espacios que vienen a continuación. </form>
+    <hr>
+    <h4>Nombre del especialista</h4>
+    <select name="Nombres" id="Especialistas">
+        <option value="" disabled selected>Selecciona un especialista </option>
+        <option value="AbelÁngel">Abel Ángel Martinez</option>
+        <option value="GladisPrieto ">Gladis Prieto Salcido</option>
+        <option value="FernandaRamos">Fernanda Ramos Gonzalez</option>
+    </select>
+    <h4>Servicio</h4>
+    <select name="Nombres" id="Especialistas">
+        <option value="" disabled selected>Selecciona un servicio</option>
+        <option value="PrimeraConsulta">Primera consulta para evaluación</option>
+        <option value="Seguimiento">Seguimiento</option>
+        <option value="Emergencia">Consulta de emergencia</option>
+    </select>
+    <h4>Correo electrónico</h4>
+    <input type="email" name="correo" placeholder="ej. usuario@gmail.com" >
+    <br>
+    <h4>Fecha de consulta</h4>
+    <input type="date" name="fecha">
+    <br>
+    <h4>Horario de consulta</h4>
+    <input type="time" name="hora">
+    <br>
+    <h4>Telefono del paciente</h4>
+    <input type="tel" name="telefono" placeholder="ej. 123 456 7890">
+    <br>
+    <h4>¿Tienes estudios que entregar?</h4>
+    <p>Agrega tus estudios en el siguiente apartado</p>
+    <input type="file" name="archivo">
+    <h4>Motivo de consulta o comentario</h4>
+    <textarea name="comentario" id="comentario" cols="50" rows="3">Escriba un comentario...</textarea>
+    <br><br>
+    <button type="submit" >Agendar cita </button>
+    <button type="reset">Restablecer</button>
+
+</body>
+</html>
